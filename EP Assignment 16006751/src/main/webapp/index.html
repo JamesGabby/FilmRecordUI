@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Film Library Interface - 16006751, EP Assignment</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<link href="jquery-ui.min.css" rel="stylesheet">
+	<link href="jquery-ui.structure.css" rel="stylesheet">
+	<link href="jquery-ui.structure.min.css" rel="stylesheet">
+	<link href="jquery-ui.theme.css" rel="stylesheet">
+	<link href="jquery-ui.theme.min.css" rel="stylesheet">
+	
+</head>
+<body>
+<header class="footer-header">James Gabbitus, 16006751</header>
+	<hr class="rounded">
+	<h1 class="film-title"> Film Library Interface </h1>
+	<hr class="rounded">
+	
+	<h2 class="demoHeaders">⋆ View All Film Data ⋆</h2>
+	<select id="selectformat">
+		<option value="json" selected="selected">JSON</option>
+		<option value="xml">XML</option>
+		<option value="text">Text</option>
+	</select><br><br>
+	<button id="show-all-button">Show All Films</button>
+	<button id="reset-button">Clear</button>
+	<div><br></div>
+	<div id="display-films2" class="return-message"></div>
+
+	<br>
+	<hr class="hr">
+	
+	<h2 class="demoHeaders">⋆ View a Film by its ID ⋆</h2>
+	<input id="film-by-id" class="form-id" placeholder="e.g. 10693"><br>
+	<select id="select-format-id">
+		<option value="json" selected="selected">JSON</option>
+		<option value="xml">XML</option>
+		<option value="text">Text</option>
+	</select><br><br>
+	<button id="get-film-by-id-button">Enter</button>
+	<button id="reset-film-button-2">Clear</button>
+	<div><br></div>
+	<div id="display-film-by-id" class="return-message"></div>
+
+	<br>
+	<hr class="hr">
+	
+	<h2 class="demoHeaders">⋆ View a Film by its Title ⋆</h2>
+	<input id="film-by-title" class="form-title" placeholder="e.g. Ace Ventura: When Nature Calls"><br>
+	<select id="select-format-title">
+		<option value="json" selected="selected">JSON</option>
+		<option value="xml">XML</option>
+		<option value="text">Text</option>
+	</select><br><br>
+	<button id="get-film-by-title-button">Enter</button>
+	<button id="reset-film-button-3">Clear</button>
+	<div><br></div>
+	<div id="display-film-by-title" class="return-message"></div>
+
+	<br>
+	<hr class="hr">
+	
+	<h2 class="demoHeaders">⋆ Delete a Film by its ID ⋆</h2>
+	<input id="delete-id" class="form-id" placeholder="e.g. 11312">
+	<button id="delete-film-button">Delete</button>
+	<div><br></div>
+	<div id="delete-film" class="return-message"></div>
+	
+	<br>
+	<hr class="hr">
+	
+	<h2 class="demoHeaders">⋆ Add a Film ⋆</h2>
+	<input id="insert-id" class="form-id" placeholder="ID"><br>
+	<input id="insert-title" class="form-title" placeholder="Title"><br>
+	<input id="insert-year" class="form-year" placeholder="Year"><br>
+	<input id="insert-director" class="form-director" placeholder="Director"><br>
+	<input id="insert-stars" class="form-stars" placeholder="Stars"><br>
+	<input id="insert-review" class="form-review" placeholder="Review"><br>
+	<select id="select-format-insert">
+		<option value="json" selected="selected">JSON</option>
+		<option value="xml">XML</option>
+		<option value="text">Text</option>
+	</select><br><br>
+	<button id="insert-film-v2">Add Film</button>
+	<button id="reset-insert-button">Clear</button>
+	<div><br></div>
+	<div id="insert-film-v2-dm" class="return-message"></div>
+
+	<br>
+	<hr class="hr">
+	
+	<h2 class="demoHeaders">⋆ Update a Film ⋆</h2>
+	<select id="select-attribute-v3">
+		<option value="id" selected="selected">Update the ID</option>
+		<option value="title">Update the Title</option>
+		<option value="year">Update the Year</option>
+		<option value="director">Update the Director</option>
+		<option value="stars">Update the Stars</option>
+		<option value="review">Update the Review</option>
+	</select>
+	<br>
+	<input id="id-to-update-v3" class="form-director" placeholder="ID of Film to be Updated"><br>
+	<input id="update-new-value-v3" class="form-review" placeholder="Enter New Value Here">
+	<br>
+	<select id="select-format-update">
+		<option value="json" selected="selected">JSON</option>
+		<option value="xml">XML</option>
+		<option value="text">Text</option>
+	</select><br><br>
+	<button id="update-button-v3">Update</button>
+	<button id="reset-update-button">Clear</button>
+	<div><br></div>
+	<div id="update-film-v3" class="return-message"></div>
+	
+	<br>
+	<hr class="hr">
+
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="scripts/film-jquery.js"></script>
+
+	<footer class="footer-header">James Gabbitus, 16006751</footer>
+</body>
+</html>
